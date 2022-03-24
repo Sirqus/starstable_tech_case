@@ -1,38 +1,88 @@
-.App {
+/* .App {
   text-align: center;
+} */
+
+input[type="text"] {
+  border-radius: 10px;
+  height: 25px;
+  margin: 5px;
+}
+input[type="submit"], button {
+  width: 100px;
+  border-radius: 10px;
+  height: 25px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  box-shadow: 0px 1px 15px black;
+  padding: 20px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header h1 {
+  margin-top: 0;
+}
+header div {
+
+}
+.new-todo-content {
+  margin: 10px 0px;
+  padding: 10px;
+  background-color: lightgray;
+  border-radius: 10px;
+  width: fit-content;
+}
+.new-todo-content input[type="text"] {
+  display: block;
+}
+.new-todo-content input[type="submit"] {
+  display: block;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main {
+  margin-top: 30px;
+}
+
+.todo-point-content {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  min-width: 400px;
+  width: fit-content;
+  margin: 20px auto;
+  box-shadow: 1px 1px 5px grey;
+  padding: 10px 30px;
+}
+.todo-point-content p {
+  display: inline-block;
+}
+.todo-point-content .checkboxBtn {
+  transform: scale(1.5);
+}
+.todo-point-content .deleteBtn {
+  width: fit-content;
+  background-color: rgb(255, 123, 123);
+}
+
+.filter-content {
+  width: 400px;
+  margin: 0 auto;
+}
+.filter-content form {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
-
-.App-link {
-  color: #61dafb;
+.filter-content form input[type="text"] {
+  width: 300px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.filter-content form input[type="checkbox"] {
+  transform: scale(1.5);
+  margin: 10px;
+}
+.filter-checkboxes {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
